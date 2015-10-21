@@ -55,8 +55,17 @@ void SceneManager::visit(NodeObj &nm)
 {
 	if (nm.isVisible())
 	{
-		_objlist.push_back(Renderable(&nm, _matstack.top(), _textures, _shader, _colour));
+        glm::mat4 top = _matstack.top();
+        _objlist.push_back(Renderable(&nm, top, _textures, _shader, _colour));
 		_textures.clear();
+        if (nm.isLight())
+        {
+            glm::vec4 newPosition(top * glm::vec4(0, 0, 0, 1));
+            nm.getLight()->position = glm::vec3(newPosition.x / newPosition.w,
+                newPosition.y / newPosition.w,
+                newPosition.z / newPosition.w);
+        }
+            
 	}
 }
 
@@ -95,12 +104,12 @@ std::vector<SceneManager::Renderable> &SceneManager::getObjList()
 	return _objlist;
 }
 
-std::vector<SceneManager::gl_LightSourceParameters *> SceneManager::getLights() const
+std::vector<SceneManager::lightParameters *> SceneManager::getLights() const
 {
 	return m_ligths;
 }
 
-void SceneManager::addLight(SceneManager::gl_LightSourceParameters * light)
+void SceneManager::addLight(SceneManager::lightParameters * light)
 {
 	m_ligths.push_back(light);
 }

@@ -21,7 +21,7 @@ class RenderManager
 {
 public:
 
-    typedef SceneManager::gl_LightSourceParameters lightParameters;
+    typedef NodeObj::gl_LightSourceParameters lightParameters;
 
 	RenderManager(Camera *camera,TwBar* TwBar);
 	~RenderManager();

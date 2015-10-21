@@ -10,7 +10,7 @@
 #include "Visitor.h"
 
 NodeObj::NodeObj(Mesh* const obj)
-	: _obj(obj)
+    : _obj(obj), _light(nullptr)
 {
 }
 

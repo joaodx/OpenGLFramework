@@ -64,7 +64,7 @@ void App::onInit()
 										"Shaders/MGShader.glsl", "Shaders/MFragmentShader.glsl");
 
 
-	Mesh *normalMesh = m_resource->createMesh("media/monkey2.obj");
+	Mesh *normalMesh = m_resource->createMesh("media/sphere.obj");
 	Mesh *ObjQuadTileMesh = new ObjQuadTiles("media/monkey.obj");
 	Mesh *ObjAtmosphere = new ObjQuadTiles("media/monkey.obj");
 
@@ -127,15 +127,15 @@ void App::onInit()
 	
 	//m_sun->addChild(m_moon);
 	//m_secondMoon->addToScene();	
-    /*m_sun->addChild(m_secondMoon);
+    m_sun->addChild(m_secondMoon);
     m_sun->addChild(m_thirdMoon);
     m_sun->addChild(m_fourthMoon);
-    m_sun->addChild(m_fifthMoon);*/
+    m_sun->addChild(m_fifthMoon);
 	m_sun->addToScene();
-	m_secondMoon->addToScene();
+	/*m_secondMoon->addToScene();
     m_thirdMoon->addToScene();
 	m_fourthMoon->addToScene();
-	m_fifthMoon->addToScene();
+	m_fifthMoon->addToScene();*/
 	
 	
 
@@ -148,9 +148,9 @@ void App::onUpdate()
     //Animation    
     
     //m_secondMoon->translate(-0.02, 0, 0);
-    /*glm::dquat quat(0.1,0,1,0);
+    glm::dquat quat(0.5,0,1,0);
     m_sun->rotate(quat);
-    m_secondMoon->rotate(quat);
+    /*m_secondMoon->rotate(quat);
     m_thirdMoon->rotate(quat);
     quat = glm::dquat(5, 1, 0, 0);
     m_fourthMoon->rotate(quat);

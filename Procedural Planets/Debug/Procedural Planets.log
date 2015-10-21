@@ -1,13 +1,10 @@
-﻿Build started 21/10/2015 11:39:29.
+﻿Build started 21/10/2015 16:08:56.
      1>Project "C:\Users\Joao\Documents\JoaoFolder\GitHub\OpenGLFramework\Procedural Planets\Procedural Planets.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
-         Main.cpp
-     1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
-                 c:\users\joao\documents\joaofolder\github\openglframework\glfw-3.0.4\include\glfw\glfw3.h(92) : see previous definition of 'APIENTRY'
-     1>c:\users\joao\documents\joaofolder\github\openglframework\procedural planets\main.cpp(38): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joao\documents\joaofolder\github\openglframework\procedural planets\main.cpp(111): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joao\documents\joaofolder\github\openglframework\procedural planets\main.cpp(115): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt App.cpp
+         App.cpp
+     1>c:\users\joao\documents\joaofolder\github\openglframework\procedural planets\nodeobj.h(72): warning C4800: 'NodeObj::gl_LightSourceParameters *' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\joao\documents\joaofolder\github\openglframework\procedural planets\app.cpp(186): warning C4800: 'float' : forcing value to bool 'true' or 'false' (performance warning)
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joao\Documents\JoaoFolder\GitHub\OpenGLFramework\Debug\OpenGLFramework.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" OpenGL32.lib AntTweakBar.lib glew32.lib glfw3dll.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joao\Documents\JoaoFolder\GitHub\OpenGLFramework\Debug\OpenGLFramework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joao\Documents\JoaoFolder\GitHub\OpenGLFramework\Debug\OpenGLFramework.lib" /MACHINE:X86 Debug\App.obj
          Debug\Camera.obj
@@ -41,4 +38,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.52
+Time Elapsed 00:00:01.65

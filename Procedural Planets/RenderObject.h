@@ -18,7 +18,7 @@
 class RenderObject 
 {
 public:
-    typedef SceneManager::gl_LightSourceParameters lightParameters;
+    typedef NodeObj::gl_LightSourceParameters lightParameters;
 
 	RenderObject(RenderManager *renderer, Mesh *mesh, Shader *shader, unsigned texture, unsigned normalMap=0, unsigned cellTexture=0);
 	~RenderObject();

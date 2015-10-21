@@ -20,7 +20,7 @@ RenderObject::RenderObject(RenderManager *render, Mesh *mesh, Shader *shader, un
 	{
 		_nodeCellTexture = new NodeTexture(cellTexture);
 	}
-	_nodeObject = new NodeObj(mesh);
+    _nodeObject = new NodeObj(mesh);
 
 	if (_nodeCellTexture != NULL)
 	{
@@ -100,6 +100,7 @@ void RenderObject::setAsLight()
 {
 	isLigth = true;    
     _light.setPosition(position);
+    _nodeObject->setLight(&_light);
     if (isLigth)
         render->addLight(&_light);
 }

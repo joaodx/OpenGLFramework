@@ -34,40 +34,7 @@ coordinating motion on the objects of the game, and enumerating the objects of t
 class SceneManager : public Visitor
 {
 public:
-    // light Structure based on [link: https://www.opengl.org/sdk/docs/tutorials/ClockworkCoders/lighting.php ]
-    struct gl_LightSourceParameters
-    {
-        glm::vec4 ambient;              // Aclarri   
-        glm::vec4 diffuse;              // Dcli   
-        glm::vec4 specular;             // Scli   
-        glm::vec3 & position;             // Ppli   
-       /* glm::vec4 halfVector;           // Derived: Hi   
-        glm::vec3 spotDirection;        // Sdli   
-        float spotExponent;        // Srli   
-        float spotCutoff;          // Crli                              
-        // (range: [0.0,90.0], 180.0)   
-        float spotCosCutoff;       // Derived: cos(Crli)                 
-        // (range: [1.0,0.0],-1.0)   
-        float constantAttenuation; // K0   
-        float linearAttenuation;   // K1   
-        float quadraticAttenuation;// K2  */
-
-        gl_LightSourceParameters(glm::vec3 &pos) : ambient(0, 0, 0, 0), diffuse(0, 0, 0, 0), specular(0, 0, 0, 0), position(pos)/*, halfVector(0, 0, 0, 0),
-            spotDirection(0, 0, 0), spotExponent(0), spotCutoff(0), spotCosCutoff(0), constantAttenuation(0),
-            linearAttenuation(0), quadraticAttenuation(0)*/ { }
-
-        gl_LightSourceParameters(glm::vec4 &amb, glm::vec4 &diff, glm::vec4 &spec, glm::vec3 &pos) : ambient(amb), diffuse(diff), specular(spec), position(pos)/*, halfVector(0, 0, 0, 0),
-            spotDirection(0, 0, 0), spotExponent(0), spotCutoff(0), spotCosCutoff(0), constantAttenuation(0),
-            linearAttenuation(0), quadraticAttenuation(0)*/ { }
-
-        void setAmbientColour(glm::vec4 amb){ ambient = amb; }
-        void setdiffuseColour(glm::vec4 diff){ diffuse = diff; }
-        void setSpecularColour(glm::vec4 spec){ specular = spec; }
-        void setPosition(glm::vec3 & pos){ position = pos; }
-        // TODO: add the other modifiers.
-
-    }; // gl_LightSourceParameters
-
+    typedef NodeObj::gl_LightSourceParameters lightParameters;
 	struct Renderable
 	{
 		NodeObj *object;
@@ -97,9 +64,9 @@ public:
 	void initScene();
 
 	std::vector<Renderable> &getObjList();
-    std::vector<gl_LightSourceParameters *> getLights() const;
+    std::vector<lightParameters *> getLights() const;
 
-    void addLight(gl_LightSourceParameters * light);
+    void addLight(lightParameters * light);
 
 private:
 	 NodeMatrix *_graph;
@@ -109,7 +76,7 @@ private:
 	 Shader *_shader;
 	 vector<unsigned> _textures;
 	 glm::vec3 _colour;
-     std::vector<gl_LightSourceParameters *> m_ligths;
+     std::vector<lightParameters *> m_ligths;
 };
 
 #endif
