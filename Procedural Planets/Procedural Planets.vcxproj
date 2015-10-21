@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BED79EC5-19BA-4959-9CB4-143F2E79BCD9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProceduralPlanets</RootNamespace>
+    <ProjectName>OpenGLFramework</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\AntTweakBar\include;$(ProjectDir)..\glm-0.9.5.4\glm;$(ProjectDir)..\glew-1.10.0\include;$(ProjectDir)..\glfw-3.0.4\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\AntTweakBar\include;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);$(ProjectDir)..\glew-1.10.0\lib\Release\Win32;$(ProjectDir)..\glfw-3.0.4\lib-msvc110</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\GLM;$(ProjectDir)..\GLEW;$(IncludePath);$(ProjectDir)..\AntTweakBar\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenGL32.lib;AntTweakBar.lib;glew32.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="NodeColour.cpp" />
+    <ClCompile Include="NodeGroup.cpp" />
+    <ClCompile Include="NodeMatrix.cpp" />
+    <ClCompile Include="NodeObj.cpp" />
+    <ClCompile Include="NodeShader.cpp" />
+    <ClCompile Include="NodeTexture.cpp" />
+    <ClCompile Include="ObjMesh.cpp" />
+    <ClCompile Include="ObjQuadTiles.cpp" />
+    <ClCompile Include="QuadMesh.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderTexture.cpp" />
+    <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="Visitor.cpp" />
+    <ClCompile Include="XMLNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Lock.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="NodeColour.h" />
+    <ClInclude Include="NodeGroup.h" />
+    <ClInclude Include="NodeMatrix.h" />
+    <ClInclude Include="NodeObj.h" />
+    <ClInclude Include="NodeShader.h" />
+    <ClInclude Include="NodeTexture.h" />
+    <ClInclude Include="ObjMesh.h" />
+    <ClInclude Include="ObjQuadTiles.h" />
+    <ClInclude Include="QuadMesh.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="RenderObject.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SceneGraph.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderTexture.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Visitor.h" />
+    <ClInclude Include="XMLNode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\AFragmentShader.glsl" />
+    <None Include="Shaders\AGShader.glsl" />
+    <None Include="Shaders\ATCShader.glsl" />
+    <None Include="Shaders\ATEShader.glsl" />
+    <None Include="Shaders\AVertexShader.glsl" />
+    <None Include="Shaders\frag2pass2.glsl" />
+    <None Include="Shaders\frag2pass2sobel.glsl" />
+    <None Include="Shaders\frag3pass2.glsl" />
+    <None Include="Shaders\frag4pass2.glsl" />
+    <None Include="Shaders\fragmentShader.glsl" />
+    <None Include="Shaders\fragmentShader2.glsl" />
+    <None Include="Shaders\fragmentShaderSecond.glsl" />
+    <None Include="Shaders\fs.glsl" />
+    <None Include="Shaders\fs2.glsl" />
+    <None Include="Shaders\fsQuadTile.glsl" />
+    <None Include="Shaders\fsQuadTile2Deffered.glsl" />
+    <None Include="Shaders\geometyShader.glsl" />
+    <None Include="Shaders\geometyShader2.glsl" />
+    <None Include="Shaders\geometyShaderSecond.glsl" />
+    <None Include="Shaders\gs.glsl" />
+    <None Include="Shaders\gs2.glsl" />
+    <None Include="Shaders\gsQuadTile.glsl" />
+    <None Include="Shaders\MFragmentShader.glsl" />
+    <None Include="Shaders\MGShader.glsl" />
+    <None Include="Shaders\MTCShader.glsl" />
+    <None Include="Shaders\MTEShader.glsl" />
+    <None Include="Shaders\MVertexShader.glsl" />
+    <None Include="Shaders\OFragmentShader.glsl" />
+    <None Include="Shaders\OGShader.glsl" />
+    <None Include="Shaders\OTCShader.glsl" />
+    <None Include="Shaders\OTEShader.glsl" />
+    <None Include="Shaders\OVertexShader.glsl" />
+    <None Include="Shaders\QuadFragShaderpass2.glsl" />
+    <None Include="Shaders\QuadVertexShaderpass2.glsl" />
+    <None Include="Shaders\SFragmentShader.glsl" />
+    <None Include="Shaders\SGShader.glsl" />
+    <None Include="Shaders\STCShader.glsl" />
+    <None Include="Shaders\STEShader.glsl" />
+    <None Include="Shaders\SVertexShader.glsl" />
+    <None Include="Shaders\tcs.glsl" />
+    <None Include="Shaders\tcs2.glsl" />
+    <None Include="Shaders\tcsQuadTile.glsl" />
+    <None Include="Shaders\tes.glsl" />
+    <None Include="Shaders\tes2.glsl" />
+    <None Include="Shaders\tesQuadTile.glsl" />
+    <None Include="Shaders\tessControl.glsl" />
+    <None Include="Shaders\tessControl2.glsl" />
+    <None Include="Shaders\tessControlSecond.glsl" />
+    <None Include="Shaders\TessEvaluation.glsl" />
+    <None Include="Shaders\TessEvaluation2.glsl" />
+    <None Include="Shaders\TessEvaluationPlanetTest.glsl" />
+    <None Include="Shaders\vertex2pass2.glsl" />
+    <None Include="Shaders\vertexshader.glsl" />
+    <None Include="Shaders\vertexshader2.glsl" />
+    <None Include="Shaders\vertexshaderSecond.glsl" />
+    <None Include="Shaders\vs.glsl" />
+    <None Include="Shaders\vs2.glsl" />
+    <None Include="Shaders\vsQuadTile.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

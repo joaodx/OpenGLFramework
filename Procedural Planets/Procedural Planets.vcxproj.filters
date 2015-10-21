@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{731993fa-c745-4bba-883b-fd51d9828c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{7557007f-667b-4d4e-bb35-e3b7fe7479b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Utilities">
+      <UniqueIdentifier>{1559f45c-e08b-4f19-bdca-a6a6e2745146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Threading">
+      <UniqueIdentifier>{1112960e-e7a9-4f75-b137-10f64ba7c8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene Manager">
+      <UniqueIdentifier>{721f1418-b441-4fca-a276-8489444e88a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource Manager">
+      <UniqueIdentifier>{3e43a661-3fa6-4f0e-a0ca-5287bbae50d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render Manager">
+      <UniqueIdentifier>{1f8ff517-177a-495d-9c06-27d3d98155d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Model Loader">
+      <UniqueIdentifier>{cb50a8e4-a525-418c-9879-07b994a1b4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene Manager\Graph Scene">
+      <UniqueIdentifier>{1d9c90d5-4c51-4c1f-9728-a399bc1432c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader">
+      <UniqueIdentifier>{a1c5339a-f00a-426d-8447-b683b1fb0024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl">
+      <UniqueIdentifier>{f98ee4cd-6c76-4b8e-9881-8bbd6b989f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\SimpleTechnique">
+      <UniqueIdentifier>{487ac956-4191-479a-a04d-669595e17eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\SimpleTecnique2">
+      <UniqueIdentifier>{b9d75d77-4e88-4a63-a708-f9b5e8cfab18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Defered technique">
+      <UniqueIdentifier>{622821ec-7800-497f-a06c-ae8eda724095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Poolar coordinates technique">
+      <UniqueIdentifier>{ca3ff957-f2f5-4310-ad41-8aacc381b938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Quad Tile technique">
+      <UniqueIdentifier>{f51cd18e-66c0-4871-8d2f-4688412d58e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Atmosphere">
+      <UniqueIdentifier>{b761a21f-73bc-4be4-afc9-a003243f26d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Ocean">
+      <UniqueIdentifier>{631498e3-7aae-488a-9984-1a4d75de8e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Sun">
+      <UniqueIdentifier>{2c040119-c539-4bc5-b8f7-fa3ea4b1afc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Moon">
+      <UniqueIdentifier>{f9f93376-9c01-4417-84a4-9fc6ceb07d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\glsl\Normal">
+      <UniqueIdentifier>{e9ddbd1d-1e90-4d2a-a17f-d4ae501967f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Engine\Model Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine\Render Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>Engine\Render Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderObject.cpp">
+      <Filter>Engine\Render Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Engine\Resource Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeColour.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeGroup.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeMatrix.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeObj.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeShader.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeTexture.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph.cpp">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Engine\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLNode.cpp">
+      <Filter>Engine\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Engine\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Engine\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Engine\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMesh.cpp">
+      <Filter>Engine\Model Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderTexture.cpp">
+      <Filter>Engine\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadMesh.cpp">
+      <Filter>Engine\Model Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjQuadTiles.cpp">
+      <Filter>Engine\Model Loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mesh.h">
+      <Filter>Engine\Model Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine\Render Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Engine\Render Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderObject.h">
+      <Filter>Engine\Render Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Engine\Resource Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.h">
+      <Filter>Engine\Scene Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeColour.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeGroup.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeMatrix.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeObj.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeShader.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeTexture.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph.h">
+      <Filter>Engine\Scene Manager\Graph Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Engine\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Lock.h">
+      <Filter>Engine\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLNode.h">
+      <Filter>Engine\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Engine\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Engine\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Engine\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMesh.h">
+      <Filter>Engine\Model Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderTexture.h">
+      <Filter>Engine\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadMesh.h">
+      <Filter>Engine\Model Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjQuadTiles.h">
+      <Filter>Engine\Model Loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\fragmentShader.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\geometyShader.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\tessControl.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\TessEvaluation.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\vertexshader.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\fragmentShader2.glsl">
+      <Filter>Engine\Shader\glsl\Normal</Filter>
+    </None>
+    <None Include="Shaders\geometyShader2.glsl">
+      <Filter>Engine\Shader\glsl\Normal</Filter>
+    </None>
+    <None Include="Shaders\tessControl2.glsl">
+      <Filter>Engine\Shader\glsl\Normal</Filter>
+    </None>
+    <None Include="Shaders\TessEvaluation2.glsl">
+      <Filter>Engine\Shader\glsl\Normal</Filter>
+    </None>
+    <None Include="Shaders\vertexshader2.glsl">
+      <Filter>Engine\Shader\glsl\Normal</Filter>
+    </None>
+    <None Include="Shaders\fs.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTechnique</Filter>
+    </None>
+    <None Include="Shaders\gs.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTechnique</Filter>
+    </None>
+    <None Include="Shaders\tcs.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTechnique</Filter>
+    </None>
+    <None Include="Shaders\tes.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTechnique</Filter>
+    </None>
+    <None Include="Shaders\vs.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTechnique</Filter>
+    </None>
+    <None Include="Shaders\vs2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\fs2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\gs2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\tcs2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\tes2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\frag3pass2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\frag4pass2.glsl">
+      <Filter>Engine\Shader\glsl\SimpleTecnique2</Filter>
+    </None>
+    <None Include="Shaders\frag2pass2.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\vertex2pass2.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\TessEvaluationPlanetTest.glsl">
+      <Filter>Engine\Shader\glsl\Poolar coordinates technique</Filter>
+    </None>
+    <None Include="Shaders\fragmentShaderSecond.glsl">
+      <Filter>Engine\Shader\glsl\Poolar coordinates technique</Filter>
+    </None>
+    <None Include="Shaders\geometyShaderSecond.glsl">
+      <Filter>Engine\Shader\glsl\Poolar coordinates technique</Filter>
+    </None>
+    <None Include="Shaders\tessControlSecond.glsl">
+      <Filter>Engine\Shader\glsl\Poolar coordinates technique</Filter>
+    </None>
+    <None Include="Shaders\vertexshaderSecond.glsl">
+      <Filter>Engine\Shader\glsl\Poolar coordinates technique</Filter>
+    </None>
+    <None Include="Shaders\frag2pass2sobel.glsl">
+      <Filter>Engine\Shader\glsl\Defered technique</Filter>
+    </None>
+    <None Include="Shaders\vsQuadTile.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\fsQuadTile.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\gsQuadTile.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\tcsQuadTile.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\tesQuadTile.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\AFragmentShader.glsl">
+      <Filter>Engine\Shader\glsl\Atmosphere</Filter>
+    </None>
+    <None Include="Shaders\AVertexShader.glsl">
+      <Filter>Engine\Shader\glsl\Atmosphere</Filter>
+    </None>
+    <None Include="Shaders\ATCShader.glsl">
+      <Filter>Engine\Shader\glsl\Atmosphere</Filter>
+    </None>
+    <None Include="Shaders\ATEShader.glsl">
+      <Filter>Engine\Shader\glsl\Atmosphere</Filter>
+    </None>
+    <None Include="Shaders\AGShader.glsl">
+      <Filter>Engine\Shader\glsl\Atmosphere</Filter>
+    </None>
+    <None Include="Shaders\OVertexShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+    <None Include="Shaders\OFragmentShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+    <None Include="Shaders\OGShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+    <None Include="Shaders\OTCShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+    <None Include="Shaders\OTEShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+    <None Include="Shaders\SFragmentShader.glsl">
+      <Filter>Engine\Shader\glsl\Sun</Filter>
+    </None>
+    <None Include="Shaders\SGShader.glsl">
+      <Filter>Engine\Shader\glsl\Sun</Filter>
+    </None>
+    <None Include="Shaders\STCShader.glsl">
+      <Filter>Engine\Shader\glsl\Sun</Filter>
+    </None>
+    <None Include="Shaders\STEShader.glsl">
+      <Filter>Engine\Shader\glsl\Sun</Filter>
+    </None>
+    <None Include="Shaders\SVertexShader.glsl">
+      <Filter>Engine\Shader\glsl\Sun</Filter>
+    </None>
+    <None Include="Shaders\MFragmentShader.glsl">
+      <Filter>Engine\Shader\glsl\Moon</Filter>
+    </None>
+    <None Include="Shaders\MGShader.glsl">
+      <Filter>Engine\Shader\glsl\Moon</Filter>
+    </None>
+    <None Include="Shaders\MTCShader.glsl">
+      <Filter>Engine\Shader\glsl\Moon</Filter>
+    </None>
+    <None Include="Shaders\MTEShader.glsl">
+      <Filter>Engine\Shader\glsl\Moon</Filter>
+    </None>
+    <None Include="Shaders\QuadFragShaderpass2.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\QuadVertexShaderpass2.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\fsQuadTile2Deffered.glsl">
+      <Filter>Engine\Shader\glsl\Quad Tile technique</Filter>
+    </None>
+    <None Include="Shaders\MVertexShader.glsl">
+      <Filter>Engine\Shader\glsl\Ocean</Filter>
+    </None>
+  </ItemGroup>
+</Project>
