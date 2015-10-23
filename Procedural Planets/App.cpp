@@ -15,7 +15,9 @@ App::App(GLFWwindow* window, TwBar* TwBar) : m_window(window), m_TwBar(TwBar),de
 
 
 		TwAddVarRW(m_TwBar, "Squared Render Technique" , TW_TYPE_BOOL32, &squared, "help='Turn on square tile'  ");
-
+        m_time = new Timer();
+        m_time->start();
+        
 }
 
 App::~App()
@@ -65,9 +67,12 @@ void App::onInit()
 
 
 	Mesh *normalMesh = m_resource->createMesh("media/sphere.obj");
+    Mesh *planeMesh = m_resource->createMesh("media/plane.obj");
 	Mesh *ObjQuadTileMesh = new ObjQuadTiles("media/monkey.obj");
 	Mesh *ObjAtmosphere = new ObjQuadTiles("media/monkey.obj");
 
+    m_plane = new RenderObject(m_render, planeMesh, normalShader, 0);
+    m_plane->translate(0.0, 0.0, -15.0);
 
 	m_sun = new RenderObject(m_render, normalMesh, normalShader, 0);
 	m_sun->translate(0.0,0.0,0.0);
@@ -131,6 +136,7 @@ void App::onInit()
     m_sun->addChild(m_thirdMoon);
     m_sun->addChild(m_fourthMoon);
     m_sun->addChild(m_fifthMoon);
+    m_plane->addToScene();
 	m_sun->addToScene();
 	/*m_secondMoon->addToScene();
     m_thirdMoon->addToScene();
@@ -146,11 +152,16 @@ void App::onUpdate()
 {
 	
     //Animation    
-    
+    float elapsedTime = m_time->time();
     //m_secondMoon->translate(-0.02, 0, 0);
     glm::dquat quat(0.5,0,1,0);
-    m_sun->rotate(quat);
-    /*m_secondMoon->rotate(quat);
+   // m_sun->rotate(quat);
+    m_sun->translate(cos(elapsedTime*2), sin(elapsedTime*2), 0);
+    m_secondMoon->translate(cos(elapsedTime), sin(elapsedTime), 0);
+    m_thirdMoon->translate(-cos(elapsedTime), -sin(elapsedTime), 0);
+    m_fourthMoon->translate(0, cos(elapsedTime), sin(elapsedTime));
+    m_fifthMoon->translate(0, -cos(elapsedTime), -sin(elapsedTime));
+   /* m_secondMoon->rotate(quat);
     m_thirdMoon->rotate(quat);
     quat = glm::dquat(5, 1, 0, 0);
     m_fourthMoon->rotate(quat);
