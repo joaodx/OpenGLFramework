@@ -102,8 +102,8 @@ int main( void )
 	TwAddVarRO(m_TwBar, "FPS" , TW_TYPE_FLOAT, &fps, "help='Number of frames per second'  ");
 
 	//------------------------------------------------------------//
-	m_time->start();
-	float start = m_time->getCurrentTime();
+    m_time->start();
+    float start = m_time->getCurrentTime();
 	int frames = 0;
     
 	do{

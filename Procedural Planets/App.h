@@ -32,6 +32,7 @@ private:
 	RenderObject *m_atmosphere;
 	RenderObject *m_ocean;
 	RenderObject *m_squared_n;
+    RenderObject *m_plane;
 	RenderObject *m_sun;
 	RenderObject* m_secondMoon;
 	RenderObject* m_thirdMoon;
@@ -42,6 +43,8 @@ private:
 	// Active shader
 	GLuint programID;
 	TwBar* m_TwBar;
+    //Time
+    Timer * m_time;
 
 	float defered;
 	float squared;
